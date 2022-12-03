@@ -583,6 +583,17 @@ START_TEST(test_s21_calc_complements_2) {
 }
 END_TEST
 
+START_TEST(test_s21_transpose_111) {
+  matrix_t test, result;
+  s21_create_matrix(2, 3, &test);
+  s21_gen_matrix(&test);
+  s21_transpose(&test, &result);
+  ck_assert_int_eq(s21_eq_matrix(&test, &result), 0);
+  s21_remove_matrix(&test);
+  s21_remove_matrix(&result);
+}
+END_TEST
+
 START_TEST(test_s21_calc_complements_3) {
   matrix_t test, test_2, result;
   s21_create_matrix(3, 3, &test);
@@ -1177,6 +1188,7 @@ int main() {
   tcase_add_test(tc_1, s21_determinant_test_2);
   tcase_add_test(tc_1, s21_inverse_matrix_test_1);
   tcase_add_test(tc_1, s21_inverse_matrix_test_2);
+  tcase_add_test(tc_1, test_s21_transpose_111);
   srunner_run_all(sr, CK_ENV);
   a = srunner_ntests_failed(sr);
   srunner_free(sr);
