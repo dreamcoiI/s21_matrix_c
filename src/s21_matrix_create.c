@@ -37,7 +37,6 @@ void s21_remove_matrix(matrix_t* A) {
   if (A->rows) {
     A->rows = 0;
   }
-  // printf("Free aloc\n");
 }
 
 int its_ok_matrix(matrix_t* a) {
@@ -46,7 +45,7 @@ int its_ok_matrix(matrix_t* a) {
     flag = 1;
   }
   return flag;
-}  // 1 - ок, 0 - ошибка
+}  
 
 int s21_create_minor(matrix_t* A, matrix_t* minor, int row, int columns) {
   int false = 0;
