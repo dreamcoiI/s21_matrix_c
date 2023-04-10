@@ -47,8 +47,3 @@ rebuild:
 leak:
 	CK_FORK=no leaks --atExit -- ./test 
 
-linter:
-	cp ../materials/linters/.clang-format ..
-	clang-format -i *.c *.h test1/*.c 
-	clang-format -n *.c *.h #test1/*.c 
-	rm -rf ../.clang-format
