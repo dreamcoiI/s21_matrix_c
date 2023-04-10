@@ -17,10 +17,6 @@ int s21_eq_matrix(matrix_t* A, matrix_t* B) {
   }
   return false;
 }
-/*0 - OK
-1 - Ошибка, некорректная матрица
-2 - Ошибка вычисления (несовпадающие размеры матриц; матрица, для которой
-нельзя провести вычисления и т.д.)*/
 
 int s21_transpose(matrix_t* A, matrix_t* result) {
   int false = 0;
@@ -88,6 +84,7 @@ int s21_inverse_matrix(matrix_t* A, matrix_t* result) {
               s21_mult_number(&transponse_mtrx, 1 / deter, result);
             }
           }
+          s21_remova_matrix(&transponse_mtrx);
           s21_remove_matrix(&calc);
         }
       } else {
