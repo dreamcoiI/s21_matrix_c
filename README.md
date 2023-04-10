@@ -333,6 +333,3 @@ Implement basic operations with matrices (partially described [above](#matrix-op
 - The gcov_report target should generate a gcov report in the form of an html page. Unit tests must be run with gcov flags to do this 
 - The matrix must be implemented as the structure described [above](#matrix-structure-in-c-language)
 - Verifiable accuracy of the fractional part is up to 6 decimal places
-
-
-💡 [Tap here](https://forms.yandex.ru/u/6357d9e22530c230b571513b/)** to leave your feedback on the project**. Pedago Team really tries to make your educational experience better.
