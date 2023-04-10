@@ -5,7 +5,6 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
-
 #include "../s21_matrix.h"
 
 #define IDENTITY_MATRIX 2
