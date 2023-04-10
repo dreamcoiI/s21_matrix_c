@@ -110,7 +110,6 @@ double s21_determinant_for_rows_more_one(matrix_t* A) {
       res += pow((-1), i) * A->matrix[0][i] *
              s21_determinant_for_rows_more_one(&minor);
       s21_remove_matrix(&minor);
-      //   printf("res:%lf\n", res);
     }
   }
   return res;
