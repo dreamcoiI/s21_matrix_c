@@ -26,7 +26,6 @@ int s21_transpose(matrix_t* A, matrix_t* result);
 double s21_determinant_for_rows_more_one(matrix_t* A);
 int s21_create_minor(matrix_t* A, matrix_t* minor, int row, int columns);
 int s21_determinant(matrix_t* A, double* result);
-/*не сделано*/
 int s21_calc_complements(matrix_t* A, matrix_t* result);
 int s21_inverse_matrix(matrix_t* A, matrix_t* result);
 
